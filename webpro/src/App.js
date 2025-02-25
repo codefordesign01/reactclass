@@ -5,6 +5,8 @@
 // import About from "./About";
 
 import Form from "./Form";
+import Loop from "./Loop";
+import Radio from "./Radio";
 
 function App() {
   // const [name , setName] = useState()
@@ -24,6 +26,10 @@ function App() {
         <h1>Bus <i class="fa-solid fa-bus"></i></h1>
       </About> */}
       <Form />
+
+      <Radio />
+
+      <Loop />
     </div>
   );
 }

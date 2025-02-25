@@ -1,0 +1,18 @@
+install project 
+file and folder structure
+make component
+import export component
+jsx
+java script in react file
+state
+prop
+pass object and arry as a props
+
+pass jsx as a props
+
+get input value 
+get checkboxs input value as arry
+get radio input value and multipul option value
+
+loop in jsx 
+
