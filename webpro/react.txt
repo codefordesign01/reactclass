@@ -15,4 +15,13 @@ get checkboxs input value as arry
 get radio input value and multipul option value
 
 loop in jsx 
+Nested loop jsx
+
+styling method
+
+1)inline style
+2)External style
+3)style component
+4)style modules
+5)External css libralary (bootstrap , tailwind css)
 
