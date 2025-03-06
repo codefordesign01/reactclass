@@ -1,18 +1,23 @@
-// import { useState } from "react";
+import { useState } from "react";
+import NewState from "./NewState";
+import './css/style.css'
 // import User from "./User";
 // import Children from "./Children";
 // import Home from "./Home";
 // import About from "./About";
 
 // import Colllage from "./Colllage";
+// import State from "./State";
 import Styling from "./Styling";
+import UserProfile from "./UserProfile";
+import Boot from "./Boot";
 
 // import Form from "./Form";
 // import Loop from "./Loop";
 // import Radio from "./Radio";
 
 function App() {
-  // const [name , setName] = useState()
+  const [name , setName] = useState(0)
   return (
     <div>
       {/* <User data={name} />
@@ -35,9 +40,15 @@ function App() {
       <Loop /> */}
 
       {/* <Colllage /> */}
+      {/* <h1 className="heading">App Js Compnent</h1>
       <Styling />
+      <UserProfile /> */}
 
+        {/* <State /> */}
 
+        <Boot />
+        {/* <NewState data={name} btn="btn" val="shahzad" />
+        <button onClick={()=>setName(name+1)}>Click </button> */}
     </div>
   );
 }

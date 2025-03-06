@@ -1,14 +1,13 @@
 import React from 'react'
+import style from './UserProfile.module.css'
+
 
 const Styling = () => {
- const headingStyle={
-  backgroundColor:"green",
-  color:"white"
- }
+ 
   return (
     <div>
       
-      <h1 style={headingStyle}>Style component</h1>
+      <h1 className={style.text}>Style component</h1>
     </div>
   )
 }
