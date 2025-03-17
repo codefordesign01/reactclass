@@ -1,11 +1,17 @@
 import React from 'react'
-import MyNavbar from '../component/Navbar'
+import Banner from '../component/home/Banner'
+import Products from '../component/home/Products'
+import Features from '../component/home/Features'
+import CallToAction from '../component/home/CallToAction'
 
 
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <Banner />
+      <Products />
+      <Features />
+      <CallToAction />
     </div>
   )
 }

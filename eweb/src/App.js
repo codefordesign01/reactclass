@@ -6,6 +6,9 @@ import Contact from './page/Contact'
 import Error from './page/Error'
 import { Route, Routes} from 'react-router-dom'
 import MyNavbar from './component/Navbar';
+import Footer from './component/Footer';
+import "./css/templatemo-sixteen.css"
+
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
         <Route element={<Contact />} path='/contact' />
         <Route element={<Error />} path='/*' />
       </Routes>
+      <Footer />
     </>
   );
 }
