@@ -8,6 +8,7 @@ import { Route, Routes} from 'react-router-dom'
 import MyNavbar from './component/Navbar';
 import Footer from './component/Footer';
 import "./css/templatemo-sixteen.css"
+import Users from './page/Users';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route element={<About />} path='/about' />
         <Route element={<Services />} path='/service' />
         <Route element={<Contact />} path='/contact' />
+        <Route element={<Users />} path='/user' />
         <Route element={<Error />} path='/*' />
       </Routes>
       <Footer />
