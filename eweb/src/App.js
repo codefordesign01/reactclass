@@ -10,6 +10,8 @@ import Footer from './component/Footer';
 import "./css/templatemo-sixteen.css"
 import Users from './page/Users';
 import Local from './page/Local';
+import Admin from './page/Admin';
+import AddProduct from './page/AddProduct';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route element={<Contact />} path='/contact' />
         <Route element={<Users />} path='/user' />
         <Route element={<Local />} path='/local' />
+        <Route element={<Admin />} path='/admin' />
+        <Route element={<AddProduct />} path='/add-product' />
         <Route element={<Error />} path='/*' />
       </Routes>
       <Footer />
