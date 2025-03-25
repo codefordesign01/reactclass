@@ -1,5 +1,5 @@
 {
- "products": [
+  "products": [
     {
       "id": "1",
       "title": "Razer Viper V3 Pro Wireless Esports Gaming Mouse",
@@ -41,15 +41,59 @@
       "price": 1839,
       "description": " System: Intel Core i9-14900KF 3.2GHz 8+16 Cores | Intel Z790 Chipset | 32GB DDR5 | 2TB PCIe Gen4 NVMe SSD | Windows 11 Home 64-bit  Graphics: NVIDIA GeForce RTX 4070 Super 12GB Graphics | 1x HDMI | 2x DisplayPort Connectivity: 5 x USB 3.1 | 4 x USB 2.0 | 1 x LAN 1G | WiFi 5 | Bluetooth 4.2 | 7.1 Channel Audio | Keyboard and Mouse ",
       "image": "https://m.media-amazon.com/images/I/717Ibv0mpzL._AC_SX466_.jpg"
+    },
+    {
+      "id": "af24",
+      "title": "shahzad",
+      "price": "45454",
+      "description": "ksgdkfskdfhsjkdfh",
+      "image": "https://5.imimg.com/data5/PM/HO/GLADMIN-10128640/powershot-sx430-is-new-camra-1000x1000.png"
+    },
+    {
+      "id": "380f",
+      "title": "carmra",
+      "price": "6000",
+      "description": "camra product",
+      "image": "https://5.imimg.com/data5/PM/HO/GLADMIN-10128640/powershot-sx430-is-new-camra-1000x1000.png"
+    },
+    {
+      "id": "346f",
+      "title": "laptop",
+      "price": "5000",
+      "description": "laptop ",
+      "image": "https://m.media-amazon.com/images/I/81Zz0kBLbWL._AC_SX466_.jpg"
+    },
+    {
+      "id": "a8c9",
+      "title": "product new",
+      "price": "545454",
+      "description": "jlslskdfjsldfk",
+      "image": "https://m.media-amazon.com/images/I/81Zz0kBLbWL._AC_SX466_.jpg"
     }
- ],
- "posts": [
-   { "id": "1", "title": "a title", "views": 100 },
-   { "id": "2", "title": "another title", "views": 200 },
-   { "id": "3", "title": "shahzad title", "views": 500 },
-   { "id": "4", "title": "Ahmad title", "views": 600 }
- ],
- "profile": {
-   "name": "typicode"
- }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "shahzad title",
+      "views": 500
+    },
+    {
+      "id": "4",
+      "title": "Ahmad title",
+      "views": 600
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
