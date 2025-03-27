@@ -1,26 +1,67 @@
 import React, { useEffect ,useState } from 'react'
 import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import Login from './login'
+
 
 
 const Admin = () => {
 
   const [prodcut , setProduct]=useState([]);
+  const [show, setShow] = useState(false);
+  const [singleProduct , setSingleProduct] = useState({});
+  const handleClose = () => setShow(false);
+ 
+  const url = "http://localhost:3000/products";
   
     useEffect(()=>{
       getProducts();
     },[])
   
    async function getProducts(){
-      const url = "http://localhost:3000/products";
       let response = await fetch(url);
       response = await response.json();
       console.log(response);
       setProduct(response)
     }
 
+   async function deleteProduct(id){
+      let response = await fetch(url+ "/" + id , {
+        method:"DELETE"
+      });
+      response = await response.json();
+      if(response){
+        alert("your Product Delete");
+        getProducts();
+      }
+
+    }
+
+   const productShow =async (id) => {
+      setShow(true);
+
+      let response = await fetch(url + "/" + id);
+      response = await response.json();
+      setSingleProduct(response)
+      console.log(response)
+    };
+
 
   return (
     <div>
+      
+      <div className='container'>
+        <div className='row'>
+          <div className='col-lg-4 col-md-6 col-sm-12 mt-5'>
+            <div className='bg-white p-4 rounded border'>
+              <input type='email' placeholder='Enter Email' className='form-control mb-3' />
+              <input type='password' placeholder='Enter password' className='form-control mb-3' />
+              <button className='btn btn-success w-100'>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='container py-5'>
         <div className='row'>
           <div className='col-12 text-end mb-5'>
@@ -49,9 +90,9 @@ const Admin = () => {
                       <td>$ : {prodcut.price}</td>
                       <td>$ : {prodcut.description}</td>
                       <td>
-                        <button className='btn'><i class="fa-solid fa-eye text-success"></i></button>
+                        <button onClick={()=>productShow(prodcut.id)} className='btn'><i class="fa-solid fa-eye text-success"></i></button>
                         <button className='btn'><i class="fa-solid fa-pen-to-square text-primary"></i></button>
-                        <button className='btn'><i class="fa-solid fa-trash text-danger"></i></button>
+                        <button onClick={()=>deleteProduct(prodcut.id)} className='btn'><i class="fa-solid fa-trash text-danger"></i></button>
                       </td>
                     </tr>
                     })
@@ -62,6 +103,28 @@ const Admin = () => {
           </div>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Product Detail</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img src={singleProduct.image} alt='' width="100%" />
+          <h2>Product title</h2>
+          <h2 className='text-primary'>{singleProduct.title}</h2>
+          <h5>Price : $<span className='text-success'>{singleProduct.price}</span></h5>
+          <p className=''>
+                  {singleProduct.description}
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   )
 }
