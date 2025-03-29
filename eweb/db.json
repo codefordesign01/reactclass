@@ -1,20 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "title": "Razer Viper V3 Pro Wireless Esports Gaming Mouse",
-      "price": 159,
-      "description": "55 G ULTRA LIGHTWEIGHT DESIGN — Designed in collaboration with world-class esports pros, the Viper V3 Pro’s perfectly balanced ultra lightweight design allows gamers to make swift, precise flicks that match every intention ",
-      "image": "https://m.media-amazon.com/images/I/619xpFKAXPL._AC_SL1500_.jpg"
-    },
-    {
-      "id": "2",
-      "title": "Lenovo Legion K310 RGB Wired Gaming Keyboard",
-      "price": 49,
-      "description": "Optimal Gaming: The K310 Wired Keyboard has a full-size layout, programmable keys, and a 24-key rollover membrane. The compact design and adjustability make it perfect for both tournaments and casual use ",
-      "image": "https://m.media-amazon.com/images/I/61peKYcMY0L._AC_SX466_.jpg"
-    },
-    {
       "id": "3",
       "title": "BENGOO G9000 Headphones",
       "price": 19,
@@ -22,18 +8,18 @@
       "image": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SX466_.jpg"
     },
     {
-      "id": "4",
       "title": "Gaming Microphone, USB PC Mic for Podcasts Videos, Streaming, Condenser Mic",
-      "price": 26,
+      "image": "http://localhost:3000/products",
+      "price": "500",
       "description": "Gradient RGB Symphony Lights: Cyclic and gradient RGB lights, in line with your live broadcast aesthetics. Bring you an immersive gaming experience and awaken all your senses. There's also a palpable sense of security, and when the COCONISE microphone is muted, the RGB lights go off to let you know you're working. Prevent accidents when you forget to mute your PC microphone for gaming. ",
-      "image": "https://m.media-amazon.com/images/I/71QclY4ig4L._AC_SX679_.jpg"
+      "id": "4"
     },
     {
-      "id": "5",
       "title": "ACEMAGIC 2025 Laptop",
-      "price": 399,
+      "image": "http://localhost:3000/products",
+      "price": "600",
       "description": "Experience lightning-fast processing speeds with ACEMAGIC AX17's 12th generation Alder Lake N97 processor, 16GB DDR4 RAM, and 512GB SSD. Its superior performance outshines rivals like Celeron N5095 and Pentium N5030, making it ideal for intense multitasking. ",
-      "image": "https://m.media-amazon.com/images/I/81Zz0kBLbWL._AC_SX466_.jpg"
+      "id": "5"
     },
     {
       "id": "6",
@@ -43,30 +29,15 @@
       "image": "https://m.media-amazon.com/images/I/717Ibv0mpzL._AC_SX466_.jpg"
     }
   ],
-  "posts": [
+  "user": [
     {
       "id": "1",
-      "title": "a title",
-      "views": 100
-    },
-    {
-      "id": "2",
-      "title": "another title",
-      "views": 200
-    },
-    {
-      "id": "3",
-      "title": "shahzad title",
-      "views": 500
-    },
-    {
-      "id": "4",
-      "title": "Ahmad title",
-      "views": 600
+      "username": "admin",
+      "password": "admin123"
     }
   ],
   "admin": {
     "email": "shahzad@gmail.com",
-    "password":"123456"
+    "password": "123456"
   }
 }

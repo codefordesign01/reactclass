@@ -12,6 +12,7 @@ import Users from './page/Users';
 import Local from './page/Local';
 import Admin from './page/Admin';
 import AddProduct from './page/AddProduct';
+import EidtProduct from './page/EidtProduct';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route element={<Local />} path='/local' />
         <Route element={<Admin />} path='/admin' />
         <Route element={<AddProduct />} path='/add-product' />
+        <Route element={<EidtProduct />} path='/eidt-product/:id' />
         <Route element={<Error />} path='/*' />
       </Routes>
       <Footer />
